@@ -14,11 +14,6 @@ function Home(){
                     <button class='botoes' type='button'>Documentaçao</button>
                 </Link>
             </div>
-            <div>
-                <Link to='About'>
-                    <button class='botoes' type='button'>About/extra</button>
-                </Link>
-            </div>
          </>
     )}
 export default Home;
