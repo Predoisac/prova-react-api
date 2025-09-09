@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { data, Link } from 'react-router';
+import { data, Link } from 'react-router-dom';
 import './style.css'
 import { GetCharacters } from '../../api/characters';
 
