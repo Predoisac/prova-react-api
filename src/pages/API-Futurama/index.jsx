@@ -12,10 +12,10 @@ function CharacterInfo(character) {
 function Futurama() {
     const [conteudo, setConteudo] = useState(<></>)
 
-    async function ListCharacters() {
+    async function ListCharacters() {[]
         const AllCharacters = await GetCharacters();
-
-        return AllCharacters.map()
+        console.log(AllCharacters)
+        return AllCharacters.map(personagem => <div key={personagem.name} />)
     }
 
     useEffect(() => {
@@ -25,6 +25,7 @@ function Futurama() {
         Carregar();
     }, {})
 
+    ListCharacters()
     return (
         <>
             {/*COLOCA O CONTEUDO AQUI */}
