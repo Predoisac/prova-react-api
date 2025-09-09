@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router';
+import { data, Link } from 'react-router';
 import './style.css'
 import { GetCharacters } from '../../api/characters';
+
+function CharacterInfo(character) {
+    
+
+    return character
+}
 
 function Futurama() {
     const [conteudo, setConteudo] = useState(<></>)
@@ -9,7 +15,7 @@ function Futurama() {
     async function ListCharacters() {
         const AllCharacters = await GetCharacters();
 
-        return AllCharacters
+        return AllCharacters.map()
     }
 
     useEffect(() => {
