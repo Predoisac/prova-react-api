@@ -1,29 +1,20 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import axios from 'axios'
-import { GetCharacters } from './api/characters'
-
-async function ListCharacters() {
-  const AllCharacters = await GetCharacters();
-
-  return AllCharacters
-}
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Futurama from './pages/API-Futurama'
+import FuturamaDOC from './pages/Futurama-Documents'
 
 function App() {
-  const [conteudo, setConteudo] = useState(<></>)
-  
-  useEffect(() => {
-  async function Carregar() {
-    setConteudo(await ListCharacters());
-  }
-  Carregar();
-  }, {})
-
-  return (
+return (
     <>
-    <main>
-      {conteudo}
-    </main>
+      <Header/>
+      <Routes>
+        <Route path='/' element= {<Home/>} ></Route>
+        <Route path='API-Futurama' element={<Futurama/>}></Route>
+        <Route path='Futurama-DOC' element={<FuturamaDOC/>}></Route>
+      </Routes>
+      <Footer/>
     </>
   )
 }
