@@ -10,13 +10,13 @@ return (
     <>
       <Header/>
       <Routes>
-        <Route path='/' element= {<Home/>} ></Route>
-        <Route path='API-Futurama' element={<Futurama/>}></Route>
-        <Route path='Futurama-DOC' element={<FuturamaDOC/>}></Route>
+        <Route path='/' element= {<Home/>} />
+        <Route path='API-Futurama' element={<Futurama/>}/>
+        <Route path='Futurama-DOC' element={<FuturamaDOC/>}/>
       </Routes>
       <Footer/>
     </>
   )
 }
 
-export default App
+export default App;
