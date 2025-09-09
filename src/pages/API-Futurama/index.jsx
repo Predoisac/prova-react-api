@@ -1,19 +1,38 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router';
 import './style.css'
+import { GetCharacters } from '../../api/characters';
 
-function Futurama(){
-    /* PODE FAZER OS CODIGOS AQUI, SO LEMBRA DE COLOCAR NO RETURN O CONTEUDO */
+function Futurama() {
+    const [conteudo, setConteudo] = useState(<></>)
 
+    async function ListCharacters() {
+        const AllCharacters = await GetCharacters();
 
-    return(
-        <>            
+        return AllCharacters
+    }
+
+    useEffect(() => {
+        async function Carregar() {
+            setConteudo(await ListCharacters());
+        }
+        Carregar();
+    }, {})
+
+    return (
+        <>
             {/*COLOCA O CONTEUDO AQUI */}
-
-            <div>
-                <Link to='/'>
-                    <button class = 'botoes' type='button'>Voltar</button>
-                </Link>
-            </div>
-         </>
-    )}
+            <main>
+                <div>
+                    {conteudo}
+                </div>
+                <div>
+                    <Link to='/'>
+                        <button class='botoes' type='button'>Voltar</button>
+                    </Link>
+                </div>
+            </main>
+        </>
+    )
+}
 export default Futurama;
