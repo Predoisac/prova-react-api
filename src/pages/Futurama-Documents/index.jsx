@@ -9,7 +9,7 @@ function FuturamaDOC(){
 
              <div>
                 <Link to='/'>
-                    <button class = 'botoes' type='button'>Voltar</button>
+                    <button className = 'botoes' type='button'>Voltar</button>
                 </Link>
             </div>
          </>

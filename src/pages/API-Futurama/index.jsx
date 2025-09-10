@@ -1,45 +1,58 @@
-import { useEffect, useState } from 'react'
-import { data, Link } from 'react-router-dom';
-import './style.css'
-import { GetCharacters } from '../../api/characters';
-
-function CharacterInfo(character) {
-    
-
-    return character
-}
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./style.css";
+import { GetCharacters } from "../../api/characters";
 
 function Futurama() {
-    const [conteudo, setConteudo] = useState(<></>)
+  const [conteudo, setConteudo] = useState(<>cu</>);
 
-    async function ListCharacters() {[]
-        const AllCharacters = await GetCharacters();
-        console.log(AllCharacters)
-        return AllCharacters.map(personagem => <div key={personagem.name} />)
+  async function ListCharacters() {
+    const AllCharacters = await GetCharacters();
+    return AllCharacters.map((personagem) => (
+      <div className="card char" key={personagem.id}>
+        <img src={personagem.image} alt={`Foto de ${personagem.name}`} />
+        <h2>{personagem.name}</h2>
+        <div className="char-info">
+          <span>
+            <b>Espécie: </b>
+            {personagem.species}
+          </span>
+          <span>
+            <b>Gênero: </b>
+            {personagem.gender}
+          </span>
+          <span>
+            <b>Estado: </b>
+            {personagem.status}
+          </span>
+        </div>
+      </div>
+    ));
+  }
+
+  useEffect(() => {
+    async function Carregar() {
+      setConteudo(await ListCharacters());
     }
+    Carregar();
+  }, []);
 
-    useEffect(() => {
-        async function Carregar() {
-            setConteudo(await ListCharacters());
-        }
-        Carregar();
-    }, {})
-
-    ListCharacters()
-    return (
-        <>
-            {/*COLOCA O CONTEUDO AQUI */}
-            <main>
-                <div>
-                    {conteudo}
-                </div>
-                <div>
-                    <Link to='/'>
-                        <button class='botoes' type='button'>Voltar</button>
-                    </Link>
-                </div>
-            </main>
-        </>
-    )
+  return (
+    <>
+      {/*COLOCA O CONTEUDO AQUI */}
+      <main>
+        <div className="lista-principal">
+            {conteudo}
+        </div>
+        <div>
+          <Link to="/">
+            <button className="botoes" type="button">
+              Voltar
+            </button>
+          </Link>
+        </div>
+      </main>
+    </>
+  );
 }
 export default Futurama;

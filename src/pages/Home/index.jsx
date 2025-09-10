@@ -6,12 +6,12 @@ function Home(){
             {/*TELA INICIAL - APENAS TER 3 BOTOES, 1 para cada pagina */}
             <div>
                 <Link to='API-Futurama'>
-                    <button class='botoes' type='button'>API-Futurama</button>
+                    <button className='botoes' type='button'>API-Futurama</button>
                 </Link>
             </div>
             <div>
                 <Link to='Futurama-DOC'>
-                    <button class='botoes' type='button'>Documentaçao</button>
+                    <button className='botoes' type='button'>Documentaçao</button>
                 </Link>
             </div>
          </>
