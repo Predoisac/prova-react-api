@@ -10,8 +10,8 @@ function Home(){
                 </Link>
             </div>
             <div>
-                <Link to='Futurama-DOC'>
-                    <button className='botoes' type='button'>Documentaçao</button>
+                <Link to='About'>
+                    <button className='botoes' type='button'>Sobre</button>
                 </Link>
             </div>
          </>

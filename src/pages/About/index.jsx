@@ -1,17 +1,15 @@
 import './style.css'
 import { Link } from 'react-router-dom'
 
-function FuturamaDOC(){
+function About(){
     return(
         <>            
-            {/*COLOCAR A DOCUMENTAÇAO AQUI*/}
-
-
              <div>
+                Teste
                 <Link to='/'>
                     <button className = 'botoes' type='button'>Voltar</button>
                 </Link>
             </div>
          </>
     )}
-export default FuturamaDOC;
+export default About;
