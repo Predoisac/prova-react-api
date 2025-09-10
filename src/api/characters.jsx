@@ -6,5 +6,5 @@ export const GetCharacters = async () => {
     if (response.status != 200) {
         return []
     }
-    return response.data
+    return response.data.items
 }

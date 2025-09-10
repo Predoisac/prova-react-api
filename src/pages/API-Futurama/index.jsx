@@ -4,10 +4,11 @@ import "./style.css";
 import { GetCharacters } from "../../api/characters";
 
 function Futurama() {
-  const [conteudo, setConteudo] = useState(<>cu</>);
+  const [conteudo, setConteudo] = useState(<></>);
 
   async function ListCharacters() {
     const AllCharacters = await GetCharacters();
+    console.log(AllCharacters)
     return AllCharacters.map((personagem) => (
       <div className="card char" key={personagem.id}>
         <img src={personagem.image} alt={`Foto de ${personagem.name}`} />
