@@ -1,9 +1,6 @@
 header{
-    background-color: saddlebrown;
+    background-color: red;
     color: white;
     padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: center;
+    width: 100%;
 }

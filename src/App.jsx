@@ -9,6 +9,7 @@ import './App.css'
 function App() {
 return (
     <>
+    <body>
       <Header/>
       <Routes>
         <Route path='/' element= {<Home/>} />
@@ -16,6 +17,7 @@ return (
         <Route path='About' element={<About/>}/>
       </Routes>
       <Footer/>
+    </body>
     </>
   )
 }

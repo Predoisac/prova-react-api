@@ -1,7 +1,10 @@
-h1{
-    color:white;
-    text-align: center;
-    padding: 0.5em;
-    background-color: wheat;
-
+footer{
+    background-color: black;
+    width:  100%;
+    height: 100%;
+    justify-items: center;
+    justify-content: end;
+    
+    align-items: end;
+    color:white
 }
