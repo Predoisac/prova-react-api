@@ -7,3 +7,6 @@ img{
     box-shadow: 0 0 0 8;
     justify-content: space-between;
 }
+h2{
+    align-items: center;
+}
