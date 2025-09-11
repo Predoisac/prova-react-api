@@ -8,11 +8,10 @@ function Futurama() {
 
   async function ListCharacters() {
     const AllCharacters = await GetCharacters();
-    console.log(AllCharacters)
     return AllCharacters.map((personagem) => (
       <div className="card char" key={personagem.id}>
         <img src={personagem.image} alt={`Foto de ${personagem.name}`} />
-        <h2>{personagem.name}</h2>
+        <h2 >{personagem.name}</h2>
         <div className="char-info">
           <span>
             <b>Espécie: </b>
