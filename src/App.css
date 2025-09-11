@@ -1,12 +1,4 @@
 body{
-<<<<<<< HEAD
-    color: black;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-=======
   font-family: Arial, Helvetica, sans-serif;
   background-color: wheat;
   color: #333;
@@ -15,7 +7,6 @@ body{
   margin: 0;
   padding: 0;
   
->>>>>>> dba52093671cc13d4c5bd4cbcfc40147ae759746
 }
 header {
   background-color: #f0f0f0;
@@ -24,8 +15,6 @@ header {
   justify-content: space-between; /* título de um lado, links do outro */
   align-items: center;
 }
-<<<<<<< HEAD
-=======
 .char-info{
   display: flex;
   flex-wrap: wrap;
@@ -46,7 +35,6 @@ header {
   flex-direction: column;
   border-radius: 8px;
 transition: 10ms;
->>>>>>> dba52093671cc13d4c5bd4cbcfc40147ae759746
 
 footer {
   background-color: #f0f0f0;
