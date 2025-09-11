@@ -8,13 +8,16 @@ body{
   padding: 0;
   
 }
-header {
-  background-color: #f0f0f0;
-  padding: 10px 20px;
+main{
+  flex: 1;
   display: flex;
-  justify-content: space-between; /* título de um lado, links do outro */
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 15px;
 }
+
 .char-info{
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +28,7 @@ header {
   align-self: center;
 }
 
+
 .botoes{
   background-color:rgb(200, 235, 119);
   display: flex;
@@ -34,20 +38,9 @@ header {
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
-transition: 10ms;
-
-footer {
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-  text-align: center; /* centraliza o texto */
-  font-size: 0.9rem;
-  color: #555;
+  transition: 10ms;
 }
 
-.botoes{
-  background-color:red;
-  padding: auto;
-}
 .botoes:hover {
   background-color: rgba(7, 167, 2, 0.842);
 }
