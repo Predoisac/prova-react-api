@@ -11,6 +11,17 @@
 }
 .voltar{
 }
+.pedroNome{
+    padding-left: 150px;
+}
 .pedroDesc{
-
+    padding-right: 100px;
+    padding-left: 150px;
+}
+.vitorNome{
+    padding-left: 150px;
+}
+.VitorDesc{
+    padding-right: 150px;
+    padding-left: 150px;
 }

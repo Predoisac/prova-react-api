@@ -38,8 +38,9 @@ main{
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
-transition: 10ms;
+  transition: 10ms;
 }
+
 .botoes:hover {
   background-color: rgba(7, 167, 2, 0.842);
 }
