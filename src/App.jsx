@@ -11,11 +11,13 @@ return (
     <>
     <body>
       <Header/>
+      <main>
       <Routes>
         <Route path='/' element= {<Home/>} />
         <Route path='API-Futurama' element={<Futurama/>}/>
         <Route path='About' element={<About/>}/>
       </Routes>
+      </main>
       <Footer/>
     </body>
     </>

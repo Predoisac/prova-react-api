@@ -41,15 +41,15 @@ function Futurama() {
     <>
       {/*COLOCA O CONTEUDO AQUI */}
       <main>
-        <div className="lista-principal">
-            {conteudo}
-        </div>
         <div>
           <Link to="/">
             <button className="botoes" type="button">
               Voltar
             </button>
           </Link>
+        </div>
+        <div className="lista-principal">
+            {conteudo}
         </div>
       </main>
     </>
